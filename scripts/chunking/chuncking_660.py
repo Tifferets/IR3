@@ -2,6 +2,7 @@ import nltk
 
 # Make sure the Punkt tokenizer is available
 nltk.download('punkt')
+# pip install nltk
 
 
 ###############################################
@@ -101,3 +102,43 @@ def chunk_fixed_overlap(text, max_words_per_chunk=660, overlap_sentences=3):
         chunks.append(current_chunk)
 
     return chunks
+
+
+import os
+
+if __name__ == "__main__":
+    input_folder = "allData"
+    output_folder = "chunks_output"
+
+    # Create output directory if it doesn't exist
+    os.makedirs(output_folder, exist_ok=True)
+
+    # Iterate through all files in allData/
+    for filename in os.listdir(input_folder):
+        if not filename.lower().endswith((".txt", ".md")):
+            # Skip non-text files
+            continue
+
+        file_path = os.path.join(input_folder, filename)
+
+        # Read file
+        with open(file_path, "r", encoding="utf8") as f:
+            text = f.read()
+
+        # Chunk the document
+        chunks = chunk_fixed_overlap(text)
+
+        print(f"{filename}: {len(chunks)} chunks created")
+
+        # Create a folder for this document
+        file_output_dir = os.path.join(output_folder, filename + "_chunks")
+        os.makedirs(file_output_dir, exist_ok=True)
+
+        # Save chunks
+        for idx, chunk in enumerate(chunks):
+            chunk_text = "\n".join(chunk)
+            chunk_filename = f"chunk_{idx+1}.txt"
+            chunk_path = os.path.join(file_output_dir, chunk_filename)
+
+            with open(chunk_path, "w", encoding="utf8") as out:
+                out.write(chunk_text)
