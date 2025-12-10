@@ -1,216 +1,107 @@
-import re
 import os
-import glob
+import re
+import html
 from pathlib import Path
 
-def clean_congressional_record(text):
+# ------------------------------------
+# CONFIG
+# ------------------------------------
+INPUT_FOLDER = "US_congressional_speeches_Text_Files"
+OUTPUT_FOLDER = "cleanedData"
+
+os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+
+
+# ------------------------------------
+# CLEANING FUNCTION
+# ------------------------------------
+
+def clean_text(text):
     """
-    מנקה תמלולי קונגרס ומשאיר רק את הדיבורים של חברי הקונגרס
+    Cleaning for hierarchical chunking.
+    Keeps:
+        - stopwords
+        - punctuation
+        - capitalization
+        - paragraph structure
+    Removes:
+        - Volume / Issue / Pages metadata
+        - Section header
+        - ===== separator lines
+        - <pre> blocks
+        - [Page E635]
+        - [Extensions of Remarks]
+        - From the Congressional Record Online...
+        - HTML escape symbols (&#x27; etc.)
+        - HTML links <a href="...">
+        - Lone ______ lines
     """
-    # שלב 1: חילוץ כל התוכן מתוך תגיות <pre>
-    pre_contents = re.findall(r'<pre>(.*?)</pre>', text, re.DOTALL)
-    
-    cleaned_speeches = []
-    
-    for content in pre_contents:
-        # שלב 2: הסרת שורות עם סוגריים מרובעים [] (כולל כותרות ומיקומי עמוד)
-        lines = content.split('\n')
-        lines = [line for line in lines if not re.search(r'\[.*?\]', line)]
-        
-        # שלב 3: הסרת קווים מפרידים (______), שורות מקור וקישורים
-        filtered_lines = []
-        for line in lines:
-            stripped = line.strip()
-            # דלג על קווים מפרידים
-            if re.match(r'^[_=]{3,}$', stripped):
-                continue
-            # דלג על שורות מקור
-            if 'Congressional Record Online' in line or 'Government Publishing Office' in line:
-                continue
-            # דלג על קישורים לאתר
-            if 'www.gpo.gov' in line or '<a href=' in line:
-                continue
-            # דלג על שורות תאריך בלבד
-            if re.match(r'^\s*(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),\s+\w+\s+\d+,\s+\d{4}\s*$', stripped):
-                continue
-            filtered_lines.append(line)
-        
-        lines = filtered_lines
-        
-        # שלב 4: הסרת כותרות באותיות גדולות (שאינן דיבורים)
-        filtered_lines = []
-        i = 0
-        while i < len(lines):
-            current_line = lines[i].strip()
-            
-            # בדיקה אם השורה היא באותיות גדולות
-            letters_only = re.sub(r'[^A-Za-z]', '', current_line)
-            is_uppercase = len(letters_only) > 5 and letters_only.isupper()
-            
-            if is_uppercase:
-                # בדיקה אם יש עוד שורות רצופות באותיות גדולות
-                consecutive_uppercase = 1
-                j = i + 1
-                while j < len(lines):
-                    next_line = lines[j].strip()
-                    if not next_line:
-                        j += 1
-                        continue
-                    next_letters = re.sub(r'[^A-Za-z]', '', next_line)
-                    if len(next_letters) > 5 and next_letters.isupper():
-                        consecutive_uppercase += 1
-                        j += 1
-                    else:
-                        break
-                
-                # אם יש 2+ שורות רצופות באותיות גדולות - זו כותרת
-                if consecutive_uppercase >= 2 or (is_uppercase and (i == 0 or not lines[i-1].strip())):
-                    i = j
-                    continue
-            
-            filtered_lines.append(lines[i])
-            i += 1
-        
-        lines = filtered_lines
-        
-        # שלב 5: הסרת שורות שיש לפניהן ואחריהן שורה ריקה (הסבר על מיקום, כותרת משנה וכד')
-        filtered_lines = []
-        i = 0
-        while i < len(lines):
-            current_line = lines[i].strip()
-            
-            if current_line:
-                has_empty_before = (i == 0 or not lines[i-1].strip())
-                has_empty_after = (i == len(lines)-1 or not lines[i+1].strip())
-                
-                # תנאי שמסנן שורות קצרות וכלליות המופרדות ברווח
-                if has_empty_before and has_empty_after and len(current_line.split()) < 10 and not current_line.endswith('.'):
-                    i += 1
-                    continue
-            
-            filtered_lines.append(lines[i])
-            i += 1
-        
-        # חיבור השורות בחזרה
-        cleaned_text = '\n'.join(filtered_lines)
 
-        # הסרת רצף הגיבריש של הגרש (&#x27;)
-        cleaned_text = cleaned_text.replace("&#x27;", "")
-        
-        # =========================================================================
-        # שלב 6: הסרת תחילת פסקאות - כל התבניות של מי מדבר
-        # =========================================================================
+    # Decode HTML escape codes
+    text = html.unescape(text)
 
-        # תבנית 1: הסרת פתיח שמכיל Ms./Mrs./Mr. + שם + Mr. Speaker. 
-        cleaned_text = re.sub(
-            # מתחילת שורה (או אחרי שורה ריקה)
-            r'(^|\n)\s*(Ms\.|Mrs\.|Mr\.)' 
-            # לוכד את שם המשפחה 
-            r'\s*([A-Z][a-z]+(\s+[A-Z][a-z]+)*|[A-Z]+(\s+of\s+[A-Za-z]+)?)\.?' 
-            # לוכד את הפנייה ליו"ר (Mr. Speaker) ואת סימני הפיסוק הנלווים
-            r'(\s*Mr\.\s*Speaker[,.]?)?\s*',
-            r'\1', # שומר רק את ה-\n או ה-^
-            cleaned_text,
-            flags=re.MULTILINE | re.IGNORECASE
-        )
+    # Remove metadata sections
+    text = re.sub(r"Volume:\s*\d+.*?\n", "", text)
+    text = re.sub(r"Pages?:\s*[A-Z0-9\- ]+\n", "", text)
+    text = re.sub(r"Section:.*?\n", "", text)
+    text = re.sub(r"Date:.*?\n", "", text)
 
-        # תבנית 2: הסרת אזכורים מנומסים של תארים/שמות (כדי לנקות פסקאות פתיחה/רקע קצרות)
-        cleaned_text = re.sub(
-            r'(^|\n)\s*(Dr\.|Deputy|Superintendent|His\s+valiant|Charles|Ms\.|Mrs\.|Mr\.)\s+[A-Z][a-z]+(\s+of\s+[A-Z][a-z]+)?\s*[^.?!]{10,100}(?=\s*[\.\?!])',
-            r'\1',
-            cleaned_text,
-            flags=re.MULTILINE
-        )
-        
-        # הסרת שורות ריקות מרובות
-        cleaned_text = re.sub(r'\n\s*\n\s*\n+', '\n\n', cleaned_text)
-        
-        # הסרת קווי הפרדה מהתחילה והסוף
-        cleaned_text = re.sub(r'^[=\s]+', '', cleaned_text)
-        cleaned_text = re.sub(r'[=\s]+$', '', cleaned_text)
-        
-        # הסרת רווחים מיותרים
-        cleaned_text = cleaned_text.strip()
-        
-        if cleaned_text:
-            cleaned_speeches.append(cleaned_text)
-    
-    # הפרדה בין נאומים שונים
-    return '\n'.join(cleaned_speeches)
+    # Remove heavy separators
+    text = re.sub(r"=+", "", text)
+
+    # Remove <pre> wrappers
+    text = re.sub(r"<pre>|</pre>", "", text)
+
+    # Remove page markers
+    text = re.sub(r"\[Extensions of Remarks\]", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"\[Page [A-Z0-9\-]+\]", "", text)
+    text = re.sub(r"\[\[Page [A-Z0-9\-]+\]\]", "", text)
+
+    # Remove congressional boilerplate
+    text = re.sub(r"From the Congressional Record Online.*?\n", "", text)
+
+    # Remove HTML anchors but keep visible text
+    text = re.sub(r"<a[^>]*>(.*?)</a>", r"\1", text)
+
+    # Remove decorative line ______
+    text = re.sub(r"^_{3,}$", "", text, flags=re.MULTILINE)
+
+    # Fix “one of Newsweek&#x27;s Best”
+    text = text.replace("Newsweek&#x27;s", "Newsweek’s")
+    text = text.replace("Doctor&#x27;s", "Doctor’s")
+
+    # Collapse excessive spaces
+    text = re.sub(r"[ \t]+", " ", text)
+
+    # Normalize newlines but preserve paragraph structure
+    text = re.sub(r"\n{3,}", "\n\n", text)
+
+    return text.strip()
 
 
-def clean_file(input_file_path, output_file_path):
-    """
-    מנקה קובץ ושומר את התוצאה.
-    """
-    # קריאת הקובץ
-    try:
-        with open(input_file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-    except FileNotFoundError:
-        print(f"שגיאה: הקובץ '{input_file_path}' לא נמצא.")
-        return
-    except Exception as e:
-        print(f"שגיאה בקריאת הקובץ '{input_file_path}': {e}")
-        return
+# ------------------------------------
+# PROCESS ONLY US FILES
+# ------------------------------------
 
-    
-    # ניקוי התוכן
-    cleaned = clean_congressional_record(content)
-    
-    # שמירה לקובץ חדש
-    try:
-        with open(output_file_path, 'w', encoding='utf-8') as f:
-            f.write(cleaned)
-    except Exception as e:
-        print(f"שגיאה בכתיבה לקובץ '{output_file_path}': {e}")
-        return
-    
-    # הדפסת סיכום עבור הקובץ
-    print(f"✓ נוקה: {os.path.basename(input_file_path)}")
-    print(f"   אורך מקורי: {len(content):,} תווים")
-    print(f"   אורך אחרי ניקוי: {len(cleaned):,} תווים")
-    print(f"   נחסכו: {len(content) - len(cleaned):,} תווים ({100 * (1 - len(cleaned)/len(content)):.1f}%)")
-    print("-" * 40)
+for filename in os.listdir(INPUT_FOLDER):
 
-def process_directory(input_dir, output_dir, prefix):
-    """
-    מבצע ניקוי על כל הקבצים בתיקייה שמתחילים בקידומת נתונה.
-    """
-    print(f"מתחיל עיבוד בתיקייה: {input_dir}")
-    
-    # 1. יצירת תיקיית יעד אם אינה קיימת
-    Path(output_dir).mkdir(parents=True, exist_ok=True)
-    print(f"תיקיית יעד: {output_dir}")
-    
-    # 2. חיפוש קבצים מתאימים
-    search_path = os.path.join(input_dir, f'{prefix}*.txt')
-    file_paths = glob.glob(search_path)
-    
-    if not file_paths:
-        print(f"❌ לא נמצאו קבצים בנתיב '{search_path}'. ודא שהתיקייה והקידומת נכונים.")
-        return
+    # Only process files beginning with "US_"
+    if not filename.startswith("US_"):
+        print(f"SKIPPED (not US): {filename}")
+        continue
 
-    print(f"🎉 נמצאו {len(file_paths)} קבצים לעיבוד.")
-    print("=" * 40)
+    # Only text formats
+    if not filename.lower().endswith(".txt"):
+        print(f"SKIPPED (not .txt): {filename}")
+        continue
 
-    # 3. עיבוד כל קובץ
-    for input_file_path in file_paths:
-        file_name = os.path.basename(input_file_path)
-        output_file_path = os.path.join(output_dir, file_name)
-        
-        clean_file(input_file_path, output_file_path)
+    input_path = Path(INPUT_FOLDER) / filename
+    output_path = Path(OUTPUT_FOLDER) / filename
 
-    print("=" * 40)
-    print("✅ סיום העיבוד.")
+    print(f"Cleaning: {filename}")
 
+    raw = input_path.read_text(encoding="utf8")
+    cleaned = clean_text(raw)
+    output_path.write_text(cleaned, encoding="utf8")
 
-if __name__ == "__main__":
-    
-    # הגדרות עיבוד
-    INPUT_DIRECTORY = 'allData'
-    OUTPUT_DIRECTORY = 'allData_cleaned'
-    FILE_PREFIX = 'US_'
-    
-    # הפעלת עיבוד התיקייה
-    process_directory(INPUT_DIRECTORY, OUTPUT_DIRECTORY, FILE_PREFIX)
+print("✓ CLEANING DONE (US files only)")
