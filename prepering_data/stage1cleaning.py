@@ -1,107 +1,99 @@
 import os
 import re
 import html
-from pathlib import Path
 
-# ------------------------------------
-# CONFIG
-# ------------------------------------
 INPUT_FOLDER = "US_congressional_speeches_Text_Files"
-OUTPUT_FOLDER = "cleanedData"
+OUTPUT_FOLDER = "cleanedData_us"
 
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 
-# ------------------------------------
-# CLEANING FUNCTION
-# ------------------------------------
-
 def clean_text(text):
-    """
-    Cleaning for hierarchical chunking.
-    Keeps:
-        - stopwords
-        - punctuation
-        - capitalization
-        - paragraph structure
-    Removes:
-        - Volume / Issue / Pages metadata
-        - Section header
-        - ===== separator lines
-        - <pre> blocks
-        - [Page E635]
-        - [Extensions of Remarks]
-        - From the Congressional Record Online...
-        - HTML escape symbols (&#x27; etc.)
-        - HTML links <a href="...">
-        - Lone ______ lines
-    """
-
-    # Decode HTML escape codes
+    # Fix HTML escape codes (&#x27; → ')
     text = html.unescape(text)
 
-    # Remove metadata sections
-    text = re.sub(r"Volume:\s*\d+.*?\n", "", text)
-    text = re.sub(r"Pages?:\s*[A-Z0-9\- ]+\n", "", text)
-    text = re.sub(r"Section:.*?\n", "", text)
-    text = re.sub(r"Date:.*?\n", "", text)
+    # Normalize line endings
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
 
-    # Remove heavy separators
-    text = re.sub(r"=+", "", text)
+    # Strip BOM if present
+    text = text.lstrip("\ufeff")
 
-    # Remove <pre> wrappers
-    text = re.sub(r"<pre>|</pre>", "", text)
+    # -----------------------------------------
+    # REMOVE METADATA LINES ONLY
+    # -----------------------------------------
+    meta_patterns = [
+        r"^\s*Title:.*$",
+        r"^\s*Volume:.*$",
+        r"^\s*Issue:.*$",
+        r"^\s*Pages?:.*$",
+        r"^\s*Section:.*$",
+        r"^\s*Date:.*$",
+        r"^\s*={5,}\s*$",
+    ]
 
-    # Remove page markers
-    text = re.sub(r"\[Extensions of Remarks\]", "", text, flags=re.IGNORECASE)
-    text = re.sub(r"\[Page [A-Z0-9\-]+\]", "", text)
-    text = re.sub(r"\[\[Page [A-Z0-9\-]+\]\]", "", text)
+    for p in meta_patterns:
+        text = re.sub(p, "", text, flags=re.MULTILINE)
 
-    # Remove congressional boilerplate
-    text = re.sub(r"From the Congressional Record Online.*?\n", "", text)
+    # Remove <pre> tags
+    text = re.sub(r"</?pre>", "", text)
 
-    # Remove HTML anchors but keep visible text
-    text = re.sub(r"<a[^>]*>(.*?)</a>", r"\1", text)
+    # -----------------------------------------
+    # REMOVE PAGE HEADERS
+    # -----------------------------------------
+    page_patterns = [
+        r"^\s*\[Page [A-Z0-9\-\s]+\]\s*$",
+        r"^\s*\[\[Page [A-Z0-9\-\s]+\]\]\s*$",
+        r"^\s*\[Pages? [A-Z0-9\-\s]+\]\s*$",
+        r"^\s*\[Extensions of Remarks\]\s*$",
+    ]
+    for p in page_patterns:
+        text = re.sub(p, "", text, flags=re.MULTILINE)
 
-    # Remove decorative line ______
-    text = re.sub(r"^_{3,}$", "", text, flags=re.MULTILINE)
+    # -----------------------------------------
+    # REMOVE BOILERPLATE BLOCKS
+    # -----------------------------------------
+    text = re.sub(
+        r"^\s*From the Congressional Record Online.*$",
+        "",
+        text,
+        flags=re.MULTILINE
+    )
 
-    # Fix “one of Newsweek&#x27;s Best”
-    text = text.replace("Newsweek&#x27;s", "Newsweek’s")
-    text = text.replace("Doctor&#x27;s", "Doctor’s")
+    # Remove lines of only underscores (with spaces)
+    text = re.sub(r"^\s*_{3,}\s*$", "", text, flags=re.MULTILINE)
 
-    # Collapse excessive spaces
-    text = re.sub(r"[ \t]+", " ", text)
+    # Remove HTML link brackets
+    text = re.sub(r"\[<.*?>\]", "", text)
 
-    # Normalize newlines but preserve paragraph structure
-    text = re.sub(r"\n{3,}", "\n\n", text)
+    # -----------------------------------------
+    # CLEAN UP EXTRA SPACE
+    # -----------------------------------------
+    text = re.sub(r"\n{3,}", "\n\n", text)   # Collapse blank lines
+    text = re.sub(r"[ \t]+", " ", text)      # Clean spaces
+    text = text.strip()
 
-    return text.strip()
+    return text
 
 
-# ------------------------------------
-# PROCESS ONLY US FILES
-# ------------------------------------
-
+# -----------------------------------------
+# MAIN LOGIC — process ONLY US_* files
+# -----------------------------------------
 for filename in os.listdir(INPUT_FOLDER):
 
-    # Only process files beginning with "US_"
-    if not filename.startswith("US_"):
-        print(f"SKIPPED (not US): {filename}")
+    if not filename.lower().endswith((".txt", ".md")):
         continue
 
-    # Only text formats
-    if not filename.lower().endswith(".txt"):
-        print(f"SKIPPED (not .txt): {filename}")
-        continue
+    input_path = os.path.join(INPUT_FOLDER, filename)
+    output_path = os.path.join(OUTPUT_FOLDER, filename)
 
-    input_path = Path(INPUT_FOLDER) / filename
-    output_path = Path(OUTPUT_FOLDER) / filename
+    print("Cleaning:", filename)
 
-    print(f"Cleaning: {filename}")
+    with open(input_path, "r", encoding="utf8") as f:
+        raw = f.read()
 
-    raw = input_path.read_text(encoding="utf8")
     cleaned = clean_text(raw)
-    output_path.write_text(cleaned, encoding="utf8")
 
-print("✓ CLEANING DONE (US files only)")
+    with open(output_path, "w", encoding="utf8") as f:
+        f.write(cleaned)
+
+print("✓ CLEANING DONE")
