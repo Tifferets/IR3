@@ -63,14 +63,14 @@ def save_text_to_file(folder_path: Path, filename: str, content: str) -> None:
 
 def process_all_files(
     input_folder_name: str = "UK_british_debates_text_files_normalize",
-    output_folder_name: str = "cleanedData",
+    output_folder_name: str = "cleanedData_uk",
     file_prefix: str = "UK",
 ) -> None:
     """
     Processes all TXT files inside the input folder:
     - reads them
     - cleans text
-    - saves output into a dedicated cleanedData folder
+    - saves output into a dedicated cleanedData_uk folder
     """
 
     input_path = BASE_DIR / input_folder_name
@@ -119,6 +119,6 @@ def process_all_files(
 if __name__ == "__main__":
     process_all_files(
         input_folder_name="UK_british_debates_text_files_normalize",
-        output_folder_name="cleanedData",
+        output_folder_name="cleanedData_uk",
         file_prefix="UK",
     )
