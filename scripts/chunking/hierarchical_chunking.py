@@ -6,61 +6,57 @@ nlp = spacy.load("en_core_web_sm")
 
 
 # --------------------------------------------------
-# Helpers
+# Split text into sentences
 # --------------------------------------------------
 
 def split_sentences(text):
-    """Split into sentences using spaCy."""
     doc = nlp(text)
     return [s.text.strip() for s in doc.sents if s.text.strip()]
 
 
-def clean_line(line):
-    """Normalize spacing."""
-    return line.strip()
-
-
 # --------------------------------------------------
-# Hierarchical Chunking
+# Hierarchical chunking
 # --------------------------------------------------
 
 def hierarchical_chunk(text):
     """
-    1. Split by SECTION headers (very common in Congress / Bills / Reports)
-    2. Inside each section, split by paragraphs
-    3. Inside each paragraph, split into sentences
-    Return a list of chunk strings.
+    Correct hierarchical chunking for Congressional Record:
+    1. Detect ALL-CAPS headings → split into sections
+    2. Split each section into paragraphs
+    3. Split each paragraph into sentences
     """
 
-    # 1. SECTION SPLIT
-    section_regex = r"(Section\s+\d+[\.:]?|Sec\.\s*\d+[\.:]?)"
-    sections = re.split(section_regex, text, flags=re.IGNORECASE)
+    # 1. Detect ALL-CAPS HEADINGS
+    heading_re = r"(?m)^(?=[A-Z][A-Z0-9 ,.'’\-]{8,})"
+
+    # Split but KEEP each heading
+    parts = re.split(heading_re, text)
+    parts = [p.strip() for p in parts if p.strip()]
 
     chunks = []
-    buffer = ""
 
-    for part in sections:
-        part = part.strip()
-        if not part:
-            continue
-
-        # 2. PARAGRAPH SPLIT
-        paragraphs = [clean_line(p) for p in part.split("\n\n") if clean_line(p)]
+    for section in parts:
+        # 2. Split paragraphs
+        paragraphs = [p.strip() for p in section.split("\n\n") if p.strip()]
 
         for para in paragraphs:
-            # 3. Sentence split
             sentences = split_sentences(para)
+            if not sentences:
+                continue
 
-            # Build chunk
             chunk_text = "\n".join(sentences)
-            if chunk_text.strip():
-                chunks.append(chunk_text)
+
+            # Skip useless chunks: dates, "of california", "in the house..."
+            if len(chunk_text.split()) < 6:  # too small = metadata
+                continue
+
+            chunks.append(chunk_text)
 
     return chunks
 
 
 # --------------------------------------------------
-# Save each chunk as a .txt file
+# Save chunks
 # --------------------------------------------------
 
 def save_chunks(chunks, output_dir, base_filename):
@@ -73,10 +69,11 @@ def save_chunks(chunks, output_dir, base_filename):
 
 
 # --------------------------------------------------
-# Main Runner
+# Runner
 # --------------------------------------------------
 
-def run_chunker(input_folder="allData", output_folder="hierarchical_chunks"):
+def run_chunker(input_folder="cleanedData_us", output_folder="hierarchical_chunks"):
+
     os.makedirs(output_folder, exist_ok=True)
 
     for filename in os.listdir(input_folder):
@@ -84,9 +81,9 @@ def run_chunker(input_folder="allData", output_folder="hierarchical_chunks"):
             continue
 
         print(f"Processing: {filename}")
+        path = os.path.join(input_folder, filename)
 
-        file_path = os.path.join(input_folder, filename)
-        with open(file_path, "r", encoding="utf8") as f:
+        with open(path, "r", encoding="utf8") as f:
             text = f.read()
 
         chunks = hierarchical_chunk(text)
