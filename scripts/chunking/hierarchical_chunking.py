@@ -72,7 +72,7 @@ def save_chunks(chunks, output_dir, base_filename):
 # Runner
 # --------------------------------------------------
 
-def run_chunker(input_folder="cleanedData_us", output_folder="hierarchical_chunks"):
+def run_chunker(input_folder="cleaned_congressional_text", output_folder="hierarchical_chunks"):
 
     os.makedirs(output_folder, exist_ok=True)
 

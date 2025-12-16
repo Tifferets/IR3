@@ -12,7 +12,7 @@ import string
 BASE_DIR = Path(__file__).resolve().parent 
 ROOT_DIR = BASE_DIR.parent 
 
-INPUT_FOLDER = ROOT_DIR / "allData" 
+INPUT_FOLDER = ROOT_DIR / "UK_british_debates_text_files_normalize" 
 OUTPUT_FOLDER = ROOT_DIR / "allData_punc_cleaned" 
 
 OUTPUT_FOLDER.mkdir(exist_ok=True)
