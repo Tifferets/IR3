@@ -1,0 +1,35 @@
+New clause 90—Regulations under Part 4—
+“When making regulations under Part 4 of this Act, the Secretary of State must have regard to the following objectives—
+(a) the international competitiveness of the economy of the United Kingdom; and
+(b) the economic growth of the United Kingdom in the medium to long term.”
+This amendment would require the Secretary of State, when making regulations under Part 4 of the Bill, to have regard to the objective of the international competitiveness of the economy and its growth in the medium to long term.
+New clause 98—Pressure to impose union recognition requirement—
+“In the Trade Union and Labour Relations (Consolidation) Act 1992, omit section 225 (Pressure to impose union recognition requirement).”
+This new clause would remove section 225 from the Trade Union and Labour Relations (Consolidation) Act 1992 on pressure to impose union recognition requirement.
+New clause 99—Electronic balloting—
+“(1) The Secretary of State must, within six months of the passing of this Act, lay before Parliament a statutory instrument containing an order under section 54 of the Employment Relations Act 2004.
+(2) That order must specify that—
+(a) permissible means may, in the case of any description of ballot or election, include (or consist of) electronic voting; and
+(b) any ballot or election including (or consisting of) electronic voting must be conducted pursuant to section 230 (Conduct of ballot) of the Trade Union and Labour Relations (Consolidation) Act 1992.
+(3) The Secretary of State must not make an order under this section until a consultation with the Trades Union Congress and the Certification Officer has been conducted.
+(4) An order under this section may not be made unless a draft has been laid before and approved by resolution of each House of Parliament.”
+This new clause requires the Secretary of State to make an order for electronic voting in a ballot or election pursuant to section 54 of the Employment Relations Act 2004 within six months of the passing of this Act, and following consultation with the TUC.
+New clause 100—Notice to employers of industrial action: amendment—
+“In section 234A of the Trade Union and Labour Relations (Consolidation) Act 1992, omit subsections (3) to (9) and insert—-
+“(3) For the purposes of this section a relevant notice is one in writing which—
+(a) identifies—
+(i) the day or the first of the days on which, at the time of the service of the relevant notice, the union proposes to call industrial action; and
+(ii) the categories of employee the union intends to call on to take industrial action; and
+(b) must be provided to the employer as early as practicable after the ballot result is known and the decision to take industrial action in furtherance of it has been taken.
+(4) If the industrial action relates to an event which has already taken place, no relevant notice shall be required.””
+This new clause replaces the provisions in section 234A of the Trade Union and Labour Relations (Consolidation) Act 1992 to define a relevant notice for industrial action, when one must be provided and when one is not required.
+New clause 103—Public sector contracting: trade union recognition—
+“(1) The Procurement Act 2023 is amended as follows.
+(2) In Part (2) (principles and objectives), after section 14A insert—
+“14B Obligations of contractors to recognise trade unions
+(1) The Secretary of State has a duty to ensure that any contract entered into after the coming into force of this Act by a—
+(a) government department;
+(b) executive agency of government;
+(c) non departmental public body; or
+(d) non Ministerial department,
+is compliant with the requirements set out in subsection (2).

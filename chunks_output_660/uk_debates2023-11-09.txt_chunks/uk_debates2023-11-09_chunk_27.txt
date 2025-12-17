@@ -1,0 +1,22 @@
+To turn the wrong way would be a monumental missed opportunity for mankind, which is why last week presented such a watershed moment.
+We convened leaders, Ministers, developers, scientists and academics from across the globe to discuss for the first time the risks and opportunities of frontier AI.
+Although the collection of countries and organisations that came to Bletchley Park was unprecedented, our goal from the start was to leave with tangible outcomes.
+Let me briefly outline a handful of actions that have resulted from the summit.
+First, 28 countries and the European Union, representing the majority of the world’s population, signed up to an unprecedented agreement known as the Bletchley declaration.
+Despite some claiming that such a declaration would be rejected by many countries in attendance, we agreed that, for the good of all, AI should be designed, developed, deployed and used in a manner that is safe, human-centric, trustworthy and responsible.
+We agreed on the protection of human rights, transparency and explainability, fairness, accountability, regulation, safety, appropriate human oversight, ethics, bias mitigation, privacy and data protection.
+We also agreed to measure, monitor and mitigate potentially harmful capabilities and the associated effects that may emerge—in particular to prevent misuse and issues of control, and the amplification of other risks—and that Turing prize winner Yoshua Bengio, credited as being one of the godfathers of AI, would lead on a state of science report to ensure that, collectively, we stay on top of the risks of frontier AI.
+Countries with differing world views and interests, including China, signed the same agreement.
+Some had said that China would not come to the summit, but it did.
+They said that, if it does attend, China would never sign an agreement, but it did.
+Then they said that if China did sign the agreement, it would not agree to continue collaborating in the long term—but it did that as well.
+That alone would have made the summit a watershed moment in the history of AI safety, but we went further.
+We surpassed all expectations by securing an agreement on Government-led testing pre-deployment of the models.
+This is truly a game changer to help ensure that we can safely harness the benefits of frontier AI while mitigating the risks.
+To facilitate it, the UK announced that the world-leading frontier taskforce will morph into the  world’s first permanent AI safety institute, which will bring together the very best AI minds in the world to research future risks and conduct third-party testing of models.
+This is just the start of the journey on AI safety, which is why we have also confirmed funding for the institute for the rest of the decade and secured future AI safety summits to be held in the Republic of Korea in six months’ time and in France in one year’s time, ensuring that the extraordinary pace of international action set by the summit last week is maintained into the future.
+None the less, the summit is just one piece in the UK’s overall approach to AI safety.
+Our White Paper published earlier this year was praised for ensuring that the UK can be agile and responsive as risks emerge.
+I am sure that Opposition Members will call for a one-size-fits-all “snapshot in time” piece of legislation, but we must ensure that we deepen our understanding of the problem before we rush to produce inadequate legislation.
+We also need to ensure that we are quick enough to act, which is why we have taken the steps to ensure that we can keep pace with the development of the technology, with the next set of models being released within six months.
+AI is the fastest emerging technology that we have ever seen, and we need a system that can identify, evaluate and understand AI to then allow us to mitigate the risks with the right guardrails.

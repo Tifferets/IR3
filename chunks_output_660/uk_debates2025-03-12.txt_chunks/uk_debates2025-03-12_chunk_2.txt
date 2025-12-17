@@ -1,0 +1,33 @@
+(2) In subsection (3), after paragraph (b) insert—
+“(ba) person who has been reasonably certified in writing by a Professional Body as having experience of, or as having received training in, acting as a worker’s companion at disciplinary or grievance hearings, or”
+(3) After subsection (7) insert—
+“(8) In this section, “Professional Body” means any organisation which is authorised by a regulation made by the Secretary of State pursuant to subsection (9).
+(9) The Secretary of State may make a regulation or regulations authorising any organisation as a Professional Body for the purposes of this section.””
+This new clause would expand the right to be accompanied by a certified companion at disciplinary and grievance hearings.
+New clause 28—Enforcement against companies subject to insolvency or voluntary liquidation—
+“(1) A Labour Market Enforcement Strategy under section 81 must include—
+(a) the Secretary of State’s assessment of—
+(i) the scale and nature of non-compliance with employment tribunal awards due to insolvency or voluntary liquidation during the period of three years ending immediately before the strategy period;
+(ii) the scale and nature of such non-compliance involving phoenixing during the same period; and
+(iii) the likely scale and nature of such non-compliance during the strategy period;
+(b) a proposal for the strategy period setting out how enforcement functions of the Secretary of State are to be exercised in relation to such non-compliance.
+(2) An annual report under section 82 must include―
+(a) an assessment of the effect of the applicable strategy on the scale and nature of non-compliance with employment tribunal awards, including non-compliance due to insolvency or voluntary liquidation, and
+(b) an assessment of the effect of the applicable strategy on the scale and nature of non-compliance involving phoenixing.
+(3) For the purposes of this section, “phoenixing” means the practice of dissolving or otherwise closing a business and establishing a new one with a similar purpose, with the effect of avoiding the enforcement of employment tribunal awards or other debts.”
+This new clause would require the Secretary of State to include, in the Labour Market Enforcement Strategy and annual reports under this Bill, information about non-compliance with employment tribunal awards by, and enforcement against, companies ordered to pay such awards that have been subject to insolvency or voluntary liquidation, including in instances in which the directors go on to set up a similar company to avoid enforcement.
+New clause 29—Trade union representatives: right not to suffer career detriment—
+“(1) In Part V of the Employment Rights Act 1996 (Protection from suffering detriment in employment), after section 47(1A), insert—
+“(1B) This section applies where the detriment in question relates to matters of internal promotion or progression.”
+(2) The Trade Union and Labour Relations (Consolidation) Act 1992 is amended in accordance with subsections (3) to (6).
+(3) In the italic title before section 137, after “Access to employment”, add “and career progression”.
+(4) After section 138, insert—
+“138A Career progression
+(1) An employer must ensure that any employee undertaking trade union representative duties does not experience detriment in matters of internal career progression as a result of the employee’s trade union activities.
+(2) Where an employee who is a trade union representative has not been appointed to a more senior role, in circumstances in which the employee met the minimum criteria for the role and demonstrated that criteria through the application, the employer must provide a written statement.
+(3) The written statement under subsection (2) must include evidence to demonstrate that the decision not to appoint the employee was not affected by the employee’s trade union activities.
+138B Career progression: support for trade union representatives
+An employer must have in place a policy to support the career progression of employees who are trade union representatives.
+The policy must set out―
+(a) how the employees will be supported in matters of internal progression and promotion; and
+(b) how the employer will consider trade union experience in assessing applications for more senior roles.””

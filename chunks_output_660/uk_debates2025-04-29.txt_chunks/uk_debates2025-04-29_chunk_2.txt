@@ -1,0 +1,22 @@
+Those exemptions are important, but the Police and Criminal Evidence Act 1984, which applies in England and Wales, already provides such restrictions and safeguards by only enabling that information to be compelled with the approval of the courts, coupled with similar conventions that apply for Scotland.
+The amendment ensures that there is no duplication.
+The powers in the Bill remain in line with existing conventions, as set out in PACE, and correctly reflect the norms of the Scottish legal system.
+Turning to Government amendments 61 to 66, paragraph 10 of schedule 3ZD currently refers to definitions within PACE in relation to special procedure material, confidential professional material, excluded material and items subject to legal privilege.
+Government amendments 63 and 51 set out specific definitions to avoid linking provisions that relate solely to Scotland with existing legislation that applies to England and Wales.
+This also ensures that legal privilege and “items subject to legal privilege” references contained in the schedule are correctly defined for Scotland.
+Government amendments 61, 62, 64, 65 and 66 are consequential to amendment 63.
+Government amendments 47 and 48 ensure that the powers for the DWP under PACE taken by the Bill in schedule 4 are aligned with those of the police and other Government Departments, such as HMRC, and provide a clear legal framework for what evidence can be seized and how it should be handled.
+Government amendments 47 and 48 mean that DWP-authorised investigators, such as the police, can seize items that  are reasonably believed to be evidence of an offence,  not just DWP-related offences, when undertaking entry, search and seizure activities in England and Wales.
+This will mean that potential evidence of any other offence, if discovered in the course of a search, can be preserved and may be seized where it is considered necessary to prevent it from being destroyed or moved.
+The amendments ensure that the law is clear on how it must be handled and transferred to the most appropriate law enforcement agency in England and Wales.
+Government amendments 49, 50 and 59 make similar provisions for authorised investigators in Scotland to those I have just described for England and Wales.
+Government amendments 57 and 58 clarify how authorised investigators can prevent access to seized evidence from any offence if it may prejudice criminal proceedings in Scotland, by amending the definition of “offence” in schedule 3ZD inserted by schedule 4 of this Act.
+This mirrors the same provisions that are already in the Bill as it applies to England and Wales.
+Government amendments 53, 54, 55 and 56 are all minor and technical amendments to correct inconsistencies in terminology.
+Government amendment 34 is a minor  and technical amendment to provide the correct reference to powers in the Social Security Administration Act 1992, to ensure that the powers in Scotland align with those in England and Wales.
+Government amendment 52 amends the period of time in which a warrant must be exercised to Scotland from three months to one month.
+This corrects the Bill to ensure that it is consistent with the usual practice in Scotland.
+Government amendment 70 ensures that the court has the power to order a person, having been disqualified, to provide their NI or EU driving licence, as is already the case for those holding a GB licence, under the new debt recovery powers.
+The Bill as drafted would allow a DWP debtor who evades payment and holds an NI or EU licence to be disqualified from driving.
+However, it inadvertently limits the court’s ability to order that person to produce their licence unless it was issued in Great Britain, undermining the power and causing administrative difficulties for the court and the Driver and Vehicle Licensing Agency.
+Government amendment 70 corrects this and ensures parity between GB, NI and EU driving licences under the powers in schedule 6.

@@ -1,0 +1,6 @@
+It recognises that advanced AI can be used to boost wellbeing, prosperity and new scientific breakthroughs, but notes that, as with all powerful technologies, current  and future developments could cause harm.
+For example, malicious actors can use AI to spark large-scale disinformation campaigns, fraud and scams.
+Future advances in advanced AI could also pose wider risks, including labour market disruption and economic power imbalances and inequalities.
+The report also highlights that, although various methods exist for assessing the risk posed by advanced AI models, all have limitations.
+As is common with scientific syntheses, the report highlights a lack of universal agreement among AI experts on a range of topics, including the state of current AI capabilities and how these could evolve over time.
+The next iteration of the report will be published ahead of the AI action summit early next year.

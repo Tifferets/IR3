@@ -1,0 +1,37 @@
+This would add duties around collective bargaining to the general duty of ACAS.
+New clause 107—Whether agreement intended to be a legally enforceable contract—
+“(1) The Trade Union and Labour Relations (Consolidation) Act 1992 is amended as follows.
+(2) For section 179, substitute—
+“179 Whether agreement intended to be a legally enforceable contract
+(1) A collective agreement shall be conclusively presumed to have been intended by the parties to be a legally enforceable contract unless the agreement—
+(a) is in writing, and
+(b) contains a provision which (however expressed) states that the parties do not intend that the agreement shall be a legally enforceable contract.
+(2) A collective agreement which satisfies those conditions shall be conclusively presumed not to have been intended by the parties to be a legally enforceable contract.
+(3) If a collective agreement is in writing and contains a provision which (however expressed) states that the parties intend that one or more parts of the agreement specified in that provision, but not the whole of the agreement, shall not be a legally enforceable contract, then—
+(a) the specified part or parts shall be conclusively presumed not to have been intended by the parties to be a legally enforceable contract, and
+(b) the remainder of the agreement shall be conclusively presumed to have been intended by the parties to be such a contract.
+(4) A part of a collective agreement which by virtue of subsection (3)(a) is not a legally enforceable contract may be referred to for the purpose of interpreting a part of the agreement which is such a contract.””
+This new clause replaces Section 179 on whether agreement intended to be a legally enforceable contract in the Trade Union and Labour Relations (Consolidation) Act 1992
+New clause 108—Industrial action: workers’ rights—
+“(1) The Trade Union and Labour Relations (Consolidation) Act 1992 is amended as follows.
+(2) After section 219, insert—
+“219A Right to strike
+Every worker shall have the right to take industrial action, whether or not in breach of any contract, subject to the provisions of this Part.”
+(3) Omit section 223 (Action taken because of dismissal for taking unofficial action).”
+This new clause would establish a clearer right to strike and remove provisions from the Trade Union and Labour Relations (Consolidation) Act 1992 that make strike action unlawful on the grounds that it turns out (retrospectively) that the action the worker took was unofficial.
+New clause 109—Industrial action and ballots—
+“(1) The Trade Union and Labour Relations (Consolidation) Act 1992 is amended as follows.
+(2) Omit—
+(a) section 224 (Secondary action)
+(b) 225 (Pressure to impose union recognition requirement)
+(c) 226A (Notice of ballot and sample voting paper for employers)
+(d) 228 (Separate workplace ballots), and
+(e) 228A (Separate workplaces: single and aggregate ballots).
+(3) In section 234 (Period after which ballot ceases to be effective), omit subsections (1) to (5) and substitute:
+“(1) Industrial action that is regarded as having the support of a ballot shall cease to be so regarded when─
+(a) the dispute which gave rise to it ceases, or
+(b) the union has taken no steps to pursue the dispute for a period of six months.”
+(4) In subsection (1) of section 244, (Meaning of “trade dispute" in Part V)—
+(a) omit “a dispute between workers and their employer” and substitute “a dispute between workers and one or more employers”.
+(b) omit “which relates wholly or mainly to” and substitute “connected with”.
+(5) In subsection (5) of section 244, omit “a worker employed by that employer” and substitute “a worker employed by an employer”.”

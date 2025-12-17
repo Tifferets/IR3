@@ -1,0 +1,34 @@
+This amendment ensures that drugs can only be approved if the Secretary of State is reasonably of the opinion that there is a scientific consensus that the drug is effective at ending someone’s life without causing pain or other significant adverse side effects.
+Amendment 97, page 21, line 5, at end insert—
+“(1A) A drug or other substance may only be approved under this Act if it has been licensed by the Medicines and Healthcare products Regulatory Agency for that purpose.”
+This amendment ensures that drugs can only be approved for this purpose if the MHRA has licensed those drugs for that purpose.
+Amendment 98, page 21, line 5, at end insert—
+“(1A) Nothing in subsection (1) requires the Secretary of State to approve any drugs or other substance if they conclude that there are no appropriate drugs or other substances to approve.”
+If the Secretary of State concludes that no drugs or substance is appropriate to be used, then the Secretary of State is not required by subclause 25(1) to approve any.
+Amendment 27, page 21, line 7, at end insert—
+“(2A) The doses and types of lethal drugs specified in any regulations made under subsection (1) must be licensed by the Medicines and Healthcare products Regulatory Agency.
+(2B) The doses and types of lethal drugs to bring about the person’s death must be recommended by the guidelines of either—
+(a) the National Institute of Clinical Excellence, or
+(b) the All Wales Medicines Strategy Group in Wales, as appropriate, prior to licensing.”
+This amendment will require the doses and types of lethal drugs to be licensed by the Medicines and Healthcare products Regulatory Agency and to be recommended by either the National Institute of Clinical Excellence or the All Wales Medicines Strategy Group in Wales as appropriate prior to licensing.
+Amendment 99, page 21, line 7, at end insert—
+“(2A) The Secretary of State may not lay a draft statutory instrument containing (whether alone or with other provision) regulations under subsection (1) before both Houses of Parliament unless they also lay before both Houses a report setting out all relevant information on the likely time to death, complications (including pain) and likely side effect.”
+This amendment requires that a report be provided to Parliament setting out the information available on the proposed drugs, including time to death, complications (including pain) and likely side effects.
+Such a report is required before Parliament votes to approve the drugs or substance.
+See consequential Amendment 100.
+Amendment 69, page 21, line 8, leave out subsection (3) and insert—
+“(3) See section (Regulation of approved substances and devices for self-administration) for powers to make provision about—
+(a) approved substances, and
+(b) devices for use or used in connection with the self-administration of approved substances.”
+This is consequential on NC13.
+Amendment 53, line 24, leave out clause 34
+This amendment is consequential on NC13.
+Amendment 54, line 34, leave out clause 35
+This amendment is consequential on NC15.
+Amendment 19, in clause 36, page 27, line 17, at end insert—
+“(ba) how the provisions of this Act relate to the operation of—
+(i) the Government’s strategy on suicide prevention,
+(ii) the duties on clinicians and others to secure the right to life, including of those at risk of suicide, under paragraphs 1 and 2 of Article 2 (Right to Life) set out in Schedule 1 of the Human Rights Act 1998,
+(iii) the Mental Health Act 1983,
+(iv) deprivation of liberty safeguards as set out in Schedule A1 to the Mental Capacity Act 2005, and
+(v) liberty protection safeguards as set out in Schedule AA1 to the Mental Capacity Act 2005.”

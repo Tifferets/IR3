@@ -1,0 +1,31 @@
+(6) No person is under any duty to—
+(a) act as a witness under this Act, or
+(b) act as a proxy under this Act.
+(7) Nothing in this section affects—
+(a) any duty relating to the giving of notifications under this Act or the recording of matters in a person’s medical records,
+(b) any duty relating to a requirement to keep records or to provide information, or
+(c) any duty of a professional to respond to enquiries made under section 11(2)(b) (enquiries by assessing doctor) relating to health or social care the professional is providing, or has recently provided, to a person seeking assistance under this Act.
+(8) Schedule (Protection from detriment) amends the Employment Rights Act 1996 to make provision to protect employees and other workers from being subjected to any detriment for—
+(a) exercising (or proposing to exercise) a right under this section not to participate in an activity or perform a function, or
+(b) participating in the provision of assistance in accordance with this Act or performing any other function under this Act.
+(9) In this section—
+(a) a reference to a duty includes any duty, whether arising from any contract, statute or otherwise;
+(b) “registered pharmacist” and “registered pharmacy technician” have the same meaning as in the Pharmacy Order 2010 (S.I. 2010/231) (see article 3 of that Order).”—(Kim Leadbeater.)
+This new clause, intended to replace clause 28, expands the protection currently provided by that clause by broadening the persons to whom it applies and the functions to which it relates; and it introduces NS1 which makes provision for enforcement of the right not be subject to detriment in connection with the Bill
+Brought up, and read the First time.
+I beg to move, That the clause be read a Second time.
+With this it will be convenient to discuss the following:
+Amendment (a) to new clause 10, after subsection 8(b), insert—
+“(8A) Nothing in Schedule (Protection from Detriment) prevents an employer who has chosen not to participate in the provision of assistance in accordance with this Act from prohibiting their employees or workers from providing such assistance in the course of their employment or work with that employer.”
+This amendment ensures that employees who work for an employer who had chosen not to provide assisted dying cannot do so whilst working for that employer.
+New clause 11—Replacing the coordinating or independent doctor where unable or unwilling to continue to act—
+“(1) This section applies where—
+(a) after a first declaration has been witnessed by the coordinating doctor, that doctor is unable or unwilling to continue to carry out the functions of the coordinating doctor, or
+(b) after a referral is made under section 9(3)(c) (including a referral to which section 12(4) applies), but before a report under section 10 has been made by virtue of that referral, the independent doctor is unable or unwilling to continue to carry out the functions of the independent doctor,
+and in this section such a coordinating or independent doctor is referred to as “the outgoing doctor”.
+(2) The outgoing doctor must as soon as practicable give written notice of their inability or unwillingness to continue to carry out their functions under this Act to—
+(a) the person seeking assistance,
+(b) the Commissioner, and
+(c) if the outgoing doctor is the independent doctor, the coordinating doctor.
+(3) Any duty or power of the outgoing doctor under this Act that arose in consequence of the declaration or referral mentioned in subsection (1) ceases to have effect from the time the outgoing doctor complies with subsection (2); but this does not apply to any duty under subsection (8) or (9).
+(4) The Secretary of State may by regulations make provision relating to the appointment, with the agreement of the person seeking assistance, of a replacement coordinating doctor who meets the requirements of section 7(5) and who is able and willing to carry out the functions of the coordinating doctor.

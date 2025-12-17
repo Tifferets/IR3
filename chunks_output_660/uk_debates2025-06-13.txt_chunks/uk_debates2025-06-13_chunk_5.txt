@@ -1,0 +1,39 @@
+(3) The Secretary of State may by regulations make provision about the content or form of the report.
+(4) The coordinating doctor must give a copy of the report to—
+(a) the person,
+(b) if the coordinating doctor is not a practitioner with the person’s GP’s practice, a registered medical practitioner with that practice, and
+(c) the Commissioner.
+”—(Kim Leadbeater.)
+This new clause (intended to be inserted after Clause 27) requires the coordinating doctor to produce a report where assistance is not provided because they are not satisfied of all of the matters mentioned in Clause 23(5).
+Brought up, read the First and Second time, and added to the Bill.
+“(1) The Secretary of State must by regulations make provision about approved substances.
+(2) The regulations must make provision about—
+(a) the supply or offer for supply, or administration, of approved substances;
+(b) the transportation, storage, handling and disposal of approved substances;
+(c) the keeping of records of matters relating to approved substances.
+(3) The regulations may in particular make provision—
+(a) about the manufacture, importation, preparation or assembly of approved substances;
+(b) for or in connection with the monitoring of matters relating to approved substances;
+(c) requiring persons specified in the regulations, in specified cases, to give information to the Secretary of State.
+(4) The regulations may in particular—
+(a) make provision relating to approved substances that is similar to, or that corresponds to, any provision of the Human Medicines Regulations 2012 (S.I. 2012/1916);
+(b) make provision applying any provision of those Regulations, with or without modifications, in relation to approved substances.
+(The regulations may also amend the Human Medicines Regulations 2012.)
+(5) The Secretary of State may by regulations make provision about devices made for use or used for, or in connection with, the self-administration of approved substances.
+(6) Regulations under this section must make provision about enforcement (which must include, but need not be limited to, provision imposing civil penalties).
+(7) Regulations under this section may make any provision that could be made by an Act of Parliament; but they may not amend this Act.
+(8) In this section “device” includes information in electronic form for use in connection with a device.
+”—(Kim Leadbeater.)
+This new clause (which is intended to replace clause 34) imposes a duty to make regulations about approved substances, and a power to make regulations about devices intended for use, or used, in connection with the self-administration of approved substances.
+Brought up, and read the First time.
+I beg to move, That the clause be read a Second time.
+With this it will be convenient to discuss the following:
+Amendment (b) to new clause 13, at end insert—
+“(5A) The Secretary of State may only approve a device under subsection (5) if the Medicines and Healthcare products Regulatory Agency has approved the device for that purpose.
+(5B) Before making any regulations under this section, the Secretary of State must consult the Medicines and Healthcare products Regulatory Agency.”
+This amendment requires that the Medicines and Healthcare products Regulatory Agency be consulted before making regulations and that medical devices can only be approved for self-administration if they have been approved by the MHRA.
+Amendment (c) to new clause 13, at end insert—
+“(5A) Regulations under subsection (5) must forbid the use of any device used for the self-administration of a gas.”
+This requires the Secretary of State to forbid the use of medical devices which cause death by the administration of a gas.
+Amendment (a) to new clause 13, leave out subsection (7).
+This removes the power to make regulations that may make any provision that could be made by an Act of Parliament (known as Henry VIII power) from this new clause.

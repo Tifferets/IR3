@@ -1,6 +1,7 @@
 import os
 import spacy
 
+
 ###############################################
 # Load optimized spaCy model
 ###############################################
@@ -92,8 +93,8 @@ def chunk_fixed_overlap(text, max_words_per_chunk=660, overlap_sentences=3):
 ###############################################
 
 if __name__ == "__main__":
-    input_folder = "allData"
-    output_folder = "chunks_output"
+    input_folder = "US_cleaned_text"
+    output_folder = "chunks_output_660"
 
     os.makedirs(output_folder, exist_ok=True)
 
@@ -101,7 +102,7 @@ if __name__ == "__main__":
         if not filename.lower().endswith((".txt", ".md")):
             continue
 
-        file_output_dir = os.path.join(output_folder, filename + "_chunks")
+        file_output_dir = os.path.join(output_folder, f"{filename}_chunks")
 
         # ------------------------------------------
         # SKIP IF ALREADY PROCESSED
@@ -120,10 +121,13 @@ if __name__ == "__main__":
         print(f"  → {len(chunks)} chunks created")
 
         os.makedirs(file_output_dir, exist_ok=True)
+        
+       
 
         for idx, chunk in enumerate(chunks):
             chunk_text = "\n".join(chunk)
-            chunk_filename = f"chunk_{idx+1}.txt"
+            base_name = os.path.splitext(filename)[0]
+            chunk_filename = f"uk_{base_name}_chunk_{idx+1}.txt"
             chunk_path = os.path.join(file_output_dir, chunk_filename)
 
             with open(chunk_path, "w", encoding="utf8") as out:

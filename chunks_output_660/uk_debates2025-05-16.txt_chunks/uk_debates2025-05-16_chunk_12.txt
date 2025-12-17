@@ -1,0 +1,40 @@
+Amendment 66, to clause 23, page 19, line 21, leave out “subsection (3)” and insert “subsection (2)”.
+This is a drafting change.
+Amendment 67, page 19, line 32, at end insert—
+“(6A) An approved substance may be provided to a person under subsection (2) by—
+(a) preparing a device which will enable that person to self-administer the substance, and
+(b) providing that person with the device.
+In the case of an approved substance so provided, the reference in subsection (3) to the approved substance is to be read as a reference to the device.”
+This amendment clarifies how the clause works in cases where an approved substance is provided by preparing a device and providing a person with the device.
+Amendment 68, page 19, line 36, leave out paragraph (b).
+This amendment is consequential on amendment 67.
+Amendment 91 to clause 26, page 21, line 22, leave out paragraph (a) and insert—
+“(a) the person’s full name, date of birth, sex, ethnicity, and last permanent address;
+(aa) whether, immediately before death, the person had a disability within the meaning of section 6 of the Equality Act 2010 (other than a disability consisting of the illness or disease which caused the person to be terminally ill within the meaning of this Act);”
+This amendment expands the duty as regards regulations about final statements so as to provide that certain additional information is included in final statements.
+Amendment 52, page 22, line 28, leave out clause 28.
+This amendment is consequential on NC10.
+Amendment 16 to clause 28, page 22, line 35, insert—
+“(3) There is no obligation on any care home or hospice regulated by the Care Quality Commission or the Care Inspectorate Wales to permit the provision of assistance under this Act on their premises.”
+This amendment prevents there being any obligation on a care home or hospice which is regulated in England or Wales to permit the provision of assistance under the Act on their premises.
+Amendment 74 to clause 52, page 35, line 20, at end insert—
+““domestic abuse” has the meaning given by section 1 of the Domestic Abuse Act 2021 (and accordingly includes behaviour that is controlling or coercive or that constitutes economic abuse);”
+This amendment defines “domestic abuse” for the purposes of the Bill.
+Amendment 75, page 35, line 31, at end insert—
+““learning disability” has the meaning given by section 1(4) of the Mental Health Act 1983;”.
+This amendment defines “learning disability” for the purposes of the Bill.
+New schedule 1—Protection from detriment—
+“Schedule
+1 The Employment Rights Act 1996 is amended as follows.
+2 After section 43M insert—
+“43N Provision of assistance under Terminally Ill Adults (End of Life) Act 2025
+(1) A worker has the right not to be subjected to any detriment by any act, or any deliberate failure to act, by the worker’s employer done on the ground that the worker has—
+(a) exercised (or proposed to exercise) a right conferred on the worker under section (No obligation to provide assistance etc) of the Terminally Ill Adults (End of Life) Act 2025 (no obligation to provide assistance etc), or
+(b) participated in the provision of assistance to a person to end their own life in accordance with that Act, or performed any other function under that Act, in accordance with that Act.
+(2) Subsection (1) does not apply where—
+(a) the worker is an employee, and
+(b) the detriment in question amounts to dismissal within the meaning of Part 10.
+(3) For the purposes of this section, and of sections 48 and 49 so far as relating to this section, “worker” and “employer” have the extended meaning given by section 43K.”
+3 (1) Section 48 (complaints to employment tribunals) is amended as follows.
+(2) After subsection (1) insert—
+“(1WA) A worker may present a complaint to an employment tribunal that the worker has been subjected to a detriment in contravention of section 43N(1).”

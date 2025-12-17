@@ -1,0 +1,40 @@
+(3) The written statement under subsection (2) must include evidence to demonstrate that the decision not to appoint the employee was not affected by the employee’s trade union activities.
+138B Career progression: support for trade union representatives
+An employer must have in place a policy to support the career progression of employees who are trade union representatives.
+The policy must set out―
+(a) how the employees will be supported in matters of internal progression and promotion; and
+(b) how the employer will consider trade union experience in assessing applications for more senior roles.””
+(5) In section 140(1), after “section 138” insert “or 138A”.
+(6) In section 142(1), after “section 138” insert “or 138A”.””
+This new clause would enhance protections to trade union representatives, extending them to cover detriment in matters of career progression, and would require employers to demonstrate that they have not denied promotion to trade union representatives as a result of their trade union activities.
+It would also require employers to have a policy in place to support the career progression of employees who are trade union representatives.
+New clause 31—Removal of secondary action provisions—
+“In the Trade Union and Labour Relations (Consolidation) Act 1992, omit section 224 (secondary action).”
+New clause 64—Duties of trade unions—
+“(1) The Trade Union and Labour Relations (Consolidation) Act 1992 is amended as follows.
+(2) In section 219 (protection from certain tort liabilities), after subsection (4) insert—
+“(5) But subsection (4) does not have effect in relation to any act in contemplation or furtherance of a trade dispute which relates wholly or mainly to proposals by an employer to vary terms and conditions of employment of two or more employees accompanied by the threat (explicit or implied) of dismissal if that variation is not agreed.””
+New clause 65—Personal Liability for breach of tribunal orders—
+“(1) Where, in relation to a body corporate—
+(a) a financial order made by an employment tribunal or agreed by the claimant and the body corporate; or
+-(b) an order of reinstatement or re-engagement made by an employment tribunal or agreed by the claimant and the body corporate
+has not been fulfilled by the date specified in the order or agreement, without reasonable excuse, and that failure is proved—
+(a) to have been committed with the consent or connivance of an officer of the body, or
+(b) to be attributable to any neglect on the part of such an officer,
+that officer shall be personally liable to reimburse the claimant in whose favour the order had been made or agreed.
+(2) An officer found liable for reimbursement under subsection (1) may be disqualified as a director or prevented from becoming a director.”
+New clause 66—Public sector contracting: trade union recognition—
+“(1) The Procurement Act 2023 is amended as follows.
+(2) In Part (2) (principles and objectives), after section 14A insert—
+“14B Obligations of contractors to recognise trade unions
+(1) The Secretary of State has a duty to ensure that any contract entered into by a—
+(a) government department;
+(b) executive agency of government;
+(c) non departmental public body; or
+(d) non Ministerial department,
+is compliant with the requirements set out in subsection (2).
+(2) A contract under subsection (1) must─
+(a) recognise an independent trade union for the purposes of collective bargaining, and
+(b) take steps to ensure that any sub-contractor to the contractor which carries out any obligation under the public contract recognises an independent trade union for the purposes of collective bargaining.
+(3) For the purposes of this section, “recognises”, “independent trade union” and “collective bargaining” have the same meaning as in the Trade Union and Labour Relations (Consolidation) Act 1992.
+(4) An independent trade union may make a complaint against a contracting authority, which is a party to a public contract, that it or a contractor or sub-contractor which carries out any obligation under the public contract is in breach of the term in subsection (2).

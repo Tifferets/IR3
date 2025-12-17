@@ -1,0 +1,27 @@
+Coming together, the network will build “complementarity and interoperability” between their technical work and approaches to AI safety, to promote the safe, secure and trustworthy development of AI.
+As part of the network, participants will share information about models, and their limitations, capabilities and risk.
+Participants will also monitor and share  information about specific AI harms and safety incidents, where they occur.
+Collaboration with overseas counterparts via the network will be fundamental to making sure that innovation in AI can continue, with safety, security and trust at its core.
+Tuesday’s meeting also marked an historic moment, as 16 leading companies signed the frontier AI safety commitments, pledging to improve AI safety and to refrain from releasing new models if the risks are too high.
+The companies signing the commitments are based right across the world, including in the US, the EU, China and the middle east.
+Unless they have already done so, leading AI developers will now publish safety frameworks on how they will measure the risks of their frontier AI models before the AI action summit, which is to be held in France in early 2025.
+The frameworks will outline when severe risks, unless adequately mitigated, would be “deemed intolerable” and what companies will do to ensure that thresholds are not surpassed.
+In the most extreme circumstances, the companies have also committed to
+“not develop or deploy a model or system at all”
+if mitigations cannot keep risks below the thresholds.
+To define those thresholds, companies will take input from trusted actors, including home Governments, as appropriate, before releasing them ahead of the AI action summit.
+On Wednesday, Ministers from more than 28 nations, the EU and the UN came together for further in depth discussions about AI safety, culminating in the agreement of the Seoul ministerial statement, in which countries agreed, for the first time, to develop shared risk thresholds for frontier AI development and deployment.
+Countries agreed to set thresholds for when model capabilities could pose “severe risks” without appropriate mitigations.
+This could include: helping malicious actors to acquire or use chemical or biological weapons; and AI’s potential ability to evade human oversight.
+That move marks an important first step as part of a wider push to develop global standards to address specific AI risks.
+As with the company commitments, countries agreed to develop proposals alongside AI companies, civil society and academia for discussion ahead of the AI action summit.
+In the statement, countries also pledged to boost international co-operation on the science of AI safety, by supporting future reports on AI risk.
+That follows the publication of the interim “International Scientific Report on the Safety of Advanced AI” last week.
+Launched at Bletchley, the report unites a diverse global team of AI experts, including an expert advisory panel from 30 leading AI nations from around the world, as well as representatives from the UN and the EU, to bring together the best existing scientific research on AI capabilities and risks.
+The report aims to give policymakers across the globe a single source of information to inform their approaches to AI safety.
+The report is fully independent, under its chair, Turing award winner, Yoshua Bengio, but Britain has played a critical role by providing the secretariat for the report, based in our AI Safety Institute.
+To pull together such a report in just six months is an extraordinary achievement for the international community; Intergovernmental Panel on Climate Change reports, for example, are released every five to seven years.
+Let me give the House a brief overview of the report’s findings.
+It recognises that advanced AI can be used to boost wellbeing, prosperity and new scientific breakthroughs, but notes that, as with all powerful technologies, current  and future developments could cause harm.
+For example, malicious actors can use AI to spark large-scale disinformation campaigns, fraud and scams.
+Future advances in advanced AI could also pose wider risks, including labour market disruption and economic power imbalances and inequalities.

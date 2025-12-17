@@ -1,0 +1,34 @@
+(4) The coordinating doctor must give a copy of the report to—
+(a) the person,
+(b) if the coordinating doctor is not a practitioner with the person’s GP’s practice, a registered medical practitioner with that practice, and
+(c) the Commissioner.”
+This new clause (intended to be inserted after Clause 27) requires the coordinating doctor to produce a report where assistance is not provided because they are not satisfied of all of the matters mentioned in Clause 23(5).
+New clause 1—No health professional shall raise assisted dying first—
+“No registered medical practitioner or other health professional shall raise the subject of the provision of assistance in accordance with this Act with a person unless that person has first raised it.”
+New clause 2—No health professional shall raise assisted dying with a person under 18—
+No registered medical practitioner or other health professional shall raise the subject of the provision of assistance in accordance with this Act with a person under the age of 18.”
+New clause 7—Doctor independence—
+“(1) Any same two registered medical practitioners may not be involved in the assessment of any one person (whether as co-ordinating doctor or independent doctor) more than three times in any 12-month period.
+(2) Where section 13 applies the Commissioner may authorise one additional instance in any relevant 12-month period.
+(3) The Secretary of State may, by regulations, modify the time periods specified in subsections (1) and (2) if, in the reasonable opinion of the Secretary of State, such modification is—
+(a) necessary to ensure the availability of assisted dying, and
+(b) does not compromise the independence of the two assessments.”
+This new clause limits the number of times two doctors can both act in the assessment of any one person to three times a year.
+It allows for the Commissioner to increase that limit in the case of death or incapacity of a doctor.
+Finally, the Secretary of State is given the power to modify that limit.
+Amendment 50 is consequential to this and ensures such regulations are made using the affirmative procedure.
+New clause 9—Standard of proof—
+“(1) Where a registered medical practitioner is required to be satisfied of a matter (other than under section 23(5)), the applicable standard of proof is a balance of probabilities but if they are not satisfied beyond reasonable doubt they must indicate in their report or statement that they are not so satisfied.
+(2) Where an Assisted Dying Review Panel is required to be satisfied of a matter, the applicable standard of proof is beyond reasonable doubt.
+(3) Where a registered medical practitioner is required to be satisfied of matters arising under section 23(5), the applicable standard of proof is beyond reasonable doubt.”
+This new clause would require the co-ordinating and independent doctor to flag if they are unsure whether one of the eligibility requirements is met or not.
+It also requires that a panel has to be sure that all the eligibility requirements are met.
+Finally, it requires the doctor administering the lethal substance to be sure that the person has capacity, a clear settled and informed wish to end their life, and is acting voluntarily without coercion and pressure.
+New clause 16—Wish to end one’s own life—
+“(1) A person does not have a wish to seek assistance to end their own life in accordance with this Act under section 5(5) if they are substantially motivated by—
+(a) not wanting to be a burden on others or on public services,
+(b) a mental disorder (including depression),
+(c) a disability (other than the terminal illness),
+(d) financial considerations, including lack of adequate housing,
+(e) lack of access, or delayed access, to treatment or other service which a public authority is required (or can reasonably be expected to) provide, or
+(f) suicidal ideation.”

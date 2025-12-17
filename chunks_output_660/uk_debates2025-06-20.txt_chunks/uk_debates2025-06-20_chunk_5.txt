@@ -1,0 +1,39 @@
+Amendment made: 95, page 36, line 26, leave out subsection (6).—(Kim Leadbeater.)
+This amendment is consequential on Amendment 94.
+1 The Employment Rights Act 1996 is amended as follows.
+2 After section 43M insert—
+“43N Provision of assistance under Terminally Ill Adults (End of Life) Act 2025
+(1) A worker has the right not to be subjected to any detriment by any act, or any deliberate failure to act, by the worker’s employer done on the ground that the worker has—
+(a) exercised (or proposed to exercise) a right conferred on the worker under section (No obligation to provide assistance etc) of the Terminally Ill Adults (End of Life) Act 2025 (no obligation to provide assistance etc), or
+(b) participated in the provision of assistance to a person to end their own life in accordance with that Act, or performed any other function under that Act, in accordance with that Act.
+(2) Subsection (1) does not apply where—
+(a) the worker is an employee, and
+(b) the detriment in question amounts to dismissal within the meaning of Part 10.
+(3) For the purposes of this section, and of sections 48 and 49 so far as relating to this section, “worker” and “employer” have the extended meaning given by section 43K.”
+3 (1) Section 48 (complaints to employment tribunals) is amended as follows.
+(2) After subsection (1) insert—
+“(1WA) A worker may present a complaint to an employment tribunal that the worker has been subjected to a detriment in contravention of section 43N(1).”
+(3) In subsection (2), after “(1)” insert “, (1WA)”.
+4 (1) Section 49 (remedies) is amended as follows.
+(2) In subsection (1), after “section 48(1)” insert “, (1WA)”.
+(3) In subsection (2), after “subsections” insert “(5YA),”.
+(4) After subsection (5) insert—
+“(5YA) Where—
+(a) the complaint is made under section 48(1WA),
+(b) the detriment to which the worker is subjected is the termination of the worker’s contract, and
+(c) that contract is not a contract of employment, any compensation must not exceed the compensation that would be payable under Chapter 2 of Part 10 if the worker had been an employee and had been dismissed for a reason specified in section 98C.”
+5 After section 98B insert—
+“98C Provision of assistance under Terminally Ill Adults (End of Life) Act 2025
+An employee who is dismissed is to be regarded for the purposes of this Part as unfairly dismissed if the reason (or if more than one, the principal reason) for the dismissal is that the employee—
+(a) exercised (or proposed to exercise) a right conferred on the employee under section (No obligation to provide assistance etc) of the Terminally Ill Adults (End of Life) Act 2025 (no obligation to provide assistance etc), or
+(b) participated in the provision of assistance to a person to end their own life in accordance with that Act, or performed any other function under that Act, in accordance with that Act.”
+6 In section 105 (redundancy), after subsection (2A) insert—
+“(2B) This subsection applies if the reason (or, if more than one, the principal reason) for which the employee was selected for dismissal was one of those specified in section 98C.”
+7 In section 108 (qualifying period of employment), in subsection (3), after paragraph (aa) insert—
+“(ab) section 98C applies,”.
+8 In section 205 (remedy for infringement of certain rights), after subsection (1) insert—
+“(1XA) In relation to the right conferred by section 43N(1), the reference in subsection (1) to an employee has effect as a reference to a worker.”
+9 In section 230 (definitions of employees, workers etc) in subsection (6)—
+(a) after “43K” insert “, 43N(3)”;
+(b) after “Part IVA” insert “, section 43N”.
+”—(Kim Leadbeater.)

@@ -1,0 +1,32 @@
+Explanatory note: This amendment ensures a Minister of the Crown making a decision on compliance with an interim injunction consults with the Attorney General.
+Amendment 9, page 5, line 23, at end insert—
+“(5) The Government must, within three months of this Act receiving Royal Assent, lay before Parliament a copy of a report setting out how this clause is compatible with Section 7A of the European Withdrawal Act and the UK’s obligations to citizens under the Good Friday Agreement.
+(6) Within three sitting days of a report being laid under subsection (5) the Government must move in each House an amendable motion that that House has considered and approved the report which has been laid.
+(7) Subsections (2) and (3) do not come into force until such as time as both Houses have passed motions under subsection (6) approving reports laid under subsection (5).”.
+Amendment 25, page 5, line 23, at the end insert—
+“(5) Section 55 of the Illegal Migration Act 2023 is amended as follows.
+(6) In subsection (6) —
+(a) omit “Where a Minister of the Crown does not make a determination under subsection (2)”, and
+(b) after “applies” insert “in relation to the removal or proposed removal of a person to Rwanda”.
+(7) For subsection (9) substitute —
+“(9A) Where a Minister of the Crown has not made a determination under subsection (2) in relation to the removal or proposed removal of a person to Rwanda, section 4(2) of the Safety of Rwanda (Asylum and Immigration) Act 2024 applies.”
+(8) After subsection (10) insert—
+“(11) Section 8(18) applies to any decisions made in connection with this section or section 5 of the Safety of Rwanda (Asylum and Immigration) Act 2024.””.
+This amendment ensures that the default position is that Rule 39 indications are not treated as binding on the United Kingdom and will not prevent removals to Rwanda, but to provide an optional discretion to Ministers.
+Clauses 5 and 6 stand part.
+Amendment 58, in clause 7, page 6, leave out line 18 and insert—
+““safe country”—
+(a) means a country to which persons may be removed from the United Kingdom in compliance with all of the United Kingdom’s obligations under international law, and
+(b) includes, in particular, a country—
+(i) from which a person removed to that country will not be removed or sent to another country in contravention of any international law, and
+(ii) in which any person who is seeking asylum or who has had an asylum determination will both have their claim determined and be treated in accordance with that country’s obligation under international law.”.
+This amendment is consequential on the removal of Clause 1 and restores to the Bill a different clarification of the meaning of “safe country” for the purposes of the Bill.
+Clause 7 stand part.
+Amendment 4, in clause 8, page 6, line 23, leave out “Scotland”.
+The intention of this amendment is to prevent the Bill affecting the law in Scotland.
+Amendment 5, page 6, line 25, after “within” insert “the rest of”.
+The intention of this amendment is to ensure that any amendment made by any Act resulting from this Bill would affect only the rest of the UK, and not Scotland (see Amendment 4).
+Amendment 32, page 6, line 25, leave out “the United Kingdom” and insert
+“England and Wales and Northern Ireland.”.
+This amendment is linked to Amendment 4 and is intended to remove the application of this Bill to Scotland.
+Clause 8 stand part.

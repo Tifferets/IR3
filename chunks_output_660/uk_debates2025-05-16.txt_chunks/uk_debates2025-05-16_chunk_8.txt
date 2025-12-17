@@ -1,0 +1,46 @@
+(1B) The clinical panel must consist of—
+(a) a registered social worker,
+(b) a registered psychiatrist,
+(c) a palliative care consultant, registered on the GMC Specialist Register,
+(d) a doctor who is—
+(i) a consultant in a specialty of the patient’s diagnosis, if the coordinating doctor is a GP, or
+(ii) a GP, if the co-ordinating doctor is a consultant, and
+(e) the coordinating doctor.
+(1C) All registered health and social worker professionals on the clinical panel must have—
+(a) received relevant training as determined by the Secretary of State, and
+(b) opted in to determine that they are eligible to be on that panel.
+(1D) The Secretary of State may by regulations establish a system for registered health and social worker professionals to opt in under subsection (1B).
+(1E) For the first assessment, the clinical panel must establish—
+(a) why the person wants to end their life through an assisted death and the alternatives they have considered,
+(b) the person’s understanding of their disease or illness and how this can be palliated,
+(c) whether there have been any intrinsic or extrinsic coercion which has led to the person seeking an assisted death,
+(d) what support is available to the person and their carers for the duration of the person’s life,
+(e) that the person—
+(i) is terminally ill,
+(ii) has capacity to make the decision to end their own life,
+(iii) was aged 18 or above at the time the first declaration was made,
+(iv) is in England and Wales,
+(v) is an ordinary resident in England and Wales and has been so resident for at least 12 months ending with the date of the first declaration,
+(vi) is registered as a patient with a general medical practice in England or Wales,
+(vii) has a clear, settled and informed wish to end their own life,
+(viii) made the first declaration voluntarily and has not been subject to coercion or pressured by any other person into making it,
+(ix) is secure in their decision, and
+(x) is not having their decision making impacted by their mental health.
+(1F) The clinical panel must provide the person with information on the support available for the duration of their life, including future care planning.
+(1G) The members of the clinical panel must meet with the patient.
+(1H) For the purposes of subsection (1G), the person may meet the clinical panel members separately or as a group, depending on the person’s wishes.
+(1I) When all assessments are complete all the members of the clinical panel must meet to discuss the patient’s safety, eligibility and care plan, including referral to specialist services.
+(1J) Should the panel come to the view that the criteria set out in subsection (1E)(e) are not met, they must prepare a written statement and a member of the panel must meet the patient to discuss their findings.
+(1K) When presenting the report under subsection (1J), the member of the panel must discuss with the person—
+(a) the options available to the person, which can include the provision of more information, and
+(b) access to the clinical or other support they require.”
+Amendment 30, page 6, line 8, at end insert—
+“(ca) has relevant and available palliative care options,”.
+This amendment would mean that someone is only eligible for assistance in ending their own life under this Act if they have relevant and available palliative care options.
+Amendment 46, page 6, line 27, leave out from “if” to “refer” in line 28 and insert—0 “the clinical panel is satisfied of all the matters listed in subsection (1E)(e),”.
+Amendment 60, page 7, line 1, at end insert—
+“(6) Where—
+(a) a referral is made under subsection (3)(c),
+(b) the independent doctor dies or through illness is unable or unwilling to act as the independent doctor, and
+(c) no report under section 10 has been made by virtue of the referral,
+a further referral may be made under subsection (3)(c).
