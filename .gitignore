@@ -33,7 +33,7 @@ Thumbs.db
 # =========================
 *.log
 *.tmp
-.pkl
+*.pkl
 # =========================
 # HuggingFace / sentence-transformers cache (optional)
 # =========================
