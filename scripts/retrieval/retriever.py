@@ -6,9 +6,12 @@ from scripts.common.models import Chunk
 
 
 INDEX_PATHS = {
-    "fixed_660": "vector_index.pkl",
-    "hierarchical": "vector_index_hierarchical.pkl",
+    "fixed_660": "vector_indexes/fixed_660/vector_index.pkl",
+    "hierarchical": "vector_indexes/hierarchical/vector_index.pkl",
 }
+
+
+
 
 
 def retrieve(query: str, method: str, chunking_type: str, k: int):

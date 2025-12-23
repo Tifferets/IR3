@@ -72,7 +72,11 @@ def generate_answer(query, retrieved_chunks):
                 time.sleep(wait_time)
                 continue
             else:
-                print(f"Error {response.status_code} with key {current_key_index % len(API_KEYS)}. Trying next key...")
+                try:
+                    print("ERROR STATUS:", response.status_code)
+                    print("ERROR BODY:", response.text[:2000])  # כדי לא להציף
+                except:
+                    pass
                 continue
 
         except Exception as e:
