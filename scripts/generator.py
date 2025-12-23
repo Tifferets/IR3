@@ -10,8 +10,8 @@ if sys.stdout.encoding != 'utf-8':
 
 # רשימת המפתחות שלך
 API_KEYS = [
-    "AIzaSyCamchq0QuZE_9tx0n28c7bgUJlQwgfOL4",
-    "AIzaSyAncD2JWXV7SQHGaiJlZCrlqf3yxrHn3Ew"
+    "AIzaSyD6MpbWm_P9uvS2jyvh2_9HsgaHs9J4_y0",
+    "AIzaSyCG3p4SsxcnAsSCXNrwvw-XrEeb1w17eSQ"
 ]
 current_key_index = 0
 
