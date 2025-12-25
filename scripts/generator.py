@@ -1,39 +1,31 @@
-
 import requests
 import time
 import sys
-import json
 
 # הגדרת קידוד למניעת שגיאות בטרמינל
 if sys.stdout.encoding != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8')
 
-# רשימת המפתחות שלך
+# רשימת 10 המפתחות שלך
 API_KEYS = [
-    "AIzaSyD6MpbWm_P9uvS2jyvh2_9HsgaHs9J4_y0",
-    "AIzaSyCG3p4SsxcnAsSCXNrwvw-XrEeb1w17eSQ"
+    "AIzaSyD6MpbWm_P9uvS2jyvh2_9HsgaHs9J4_y0", "AIzaSyCG3p4SsxcnAsSCXNrwvw-XrEeb1w17eSQ", "AIzaSyBQpHRIHwCiBz9UXzwQfaSOSi1KSxxxS2g", "AIzaSyBa1zk3VaYLne78e7LXPRr5LUIHzD2kRJw", "AIzaSyC8SmXGheHNGqXsPRANbpk8RfUZP9s4gEA",
+    "AIzaSyCmSBioz03yeRc0WtWc1jPX1z88zEpd8Nc", "AIzaSyBjsBQp2vEWxAmMwC5MYPYGWEhOK8pnJhM", "AIzaSyBwTc599DUcfGENp6N03lg0m8em3EfIuvE", "AIzaSyDIKJAh9OdB06uGh0wbQWY18yr3byOMD8M", "AIzaSyCH40QbD8mbZY2x4k5fIB49ZV9cRfe3GUs",
+    "AIzaSyBGcV84OCbb3LQcFRpqMlLwS-Cij1kDVt4","AIzaSyBJAd4qufgITJoJ6T62AmYvRrE6QED9psI"
 ]
+
+# המשתנה שזוכר איפה עצרנו (נשמר בין קריאה לקריאה)
 current_key_index = 0
 
-def get_next_key():
-    """מחליף בין המפתחות ברשימה"""
-    global current_key_index
-    key = API_KEYS[current_key_index % len(API_KEYS)]
-    current_key_index += 1
-    return key
-
 def generate_answer(query, retrieved_chunks):
-    """
-    מייצרת תשובה על סמך צ'אנקים בלבד (אחריות אדם ב').
-    משתמשת ברוטציה בין מפתחות ובנתיב Gemini 2.5 Flash.
-    """
-    # 1. בניית הקונטקסט
+    global current_key_index
+    
+    # 1. בניית הקונטקסט (נשמר בדיוק כפי שהיה)
     context_text = ""
-    for i, chunk in enumerate(retrieved_chunks):
-        context_text += f"\n--- Source File: {chunk['file_name']} ---\n"
-        context_text += chunk['text'] + "\n"
+    for chunk in retrieved_chunks:
+        context_text += f"\n--- Source File: {chunk.get('file_name', 'unknown')} ---\n"
+        context_text += chunk.get('text', '') + "\n"
 
-    # 2. הנחיות המערכת של אדם ב'
+    # 2. הפרומפט המקורי והחזק שלנו (הבטחת איכות)
     system_prompt = (
         "You are an expert information extraction assistant. "
         "Your task is to answer the user's question based ONLY on the provided document chunks. "
@@ -46,48 +38,61 @@ def generate_answer(query, retrieved_chunks):
         "5. Consistency: If different chunks provide conflicting information, report both views."
     )
 
-    # 3. מנגנון הרצה עם רוטציה והמתנה
-    retries = 6 
+    # 3. לוגיקת הניסיונות עם ניצול מפתחות סדרתי
+    retries = 15 
     for i in range(retries):
-        current_key = get_next_key()
-        # שימוש בנתיב המדויק שביקשת
+        if current_key_index >= len(API_KEYS):
+            return "Error: All API keys in the pool have been exhausted."
+
+        current_key = API_KEYS[current_key_index]
+        
+        # כתובת ה-URL המדויקת לגרסה 2.5 פריוויו
         url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key={current_key}"
 
+        # ה-Payload המקורי (שמפריד בין הנחיות מערכת לתוכן)
         payload = {
-            "contents": [{"parts": [{"text": f"Context:\n{context_text}\n\nQuestion: {query}"}]}],
-            "systemInstruction": {"parts": [{"text": system_prompt}]},
-            "generationConfig": {"temperature": 0} # דיוק עובדתי
+            "contents": [
+                {
+                    "parts": [{"text": f"Context:\n{context_text}\n\nQuestion: {query}"}]
+                }
+            ],
+            "systemInstruction": {
+                "parts": [{"text": system_prompt}]
+            },
+            "generationConfig": {
+                "temperature": 0
+            }
         }
 
         try:
             response = requests.post(url, json=payload)
 
+            # אם הצלחנו - מעולה! מחזירים את התשובה ונשארים עם אותו מפתח לפעם הבאה
             if response.status_code == 200:
                 result = response.json()
                 return result.get('candidates', [{}])[0].get('content', {}).get('parts', [{}])[0].get('text', "No response.")
 
-            if response.status_code == 429:
-                wait_time = 2**i
-                print(f"Key {current_key_index % len(API_KEYS)} limited. Rotating and waiting {wait_time}s...")
+            # אם נגמרה המכסה (429) או שהמפתח נחסם (403)
+            if response.status_code in [429, 403]:
+                print(f"Key {current_key_index + 1} hit a limit (Status {response.status_code}). Switching to next key...")
+                current_key_index += 1 # "שורפים" את המפתח ועוברים לבא
+                
+                # המתנה קצרה של Exponential Backoff רק כדי לא להציף את המפתח החדש מיד
+                wait_time = min(2**i, 10) 
                 time.sleep(wait_time)
-                continue
+                continue 
+            
             else:
-                try:
-                    print("ERROR STATUS:", response.status_code)
-                    print("ERROR BODY:", response.text[:2000])  # כדי לא להציף
-                except:
-                    pass
-                continue
+                return f"Error {response.status_code}: {response.text}"
 
         except Exception as e:
-            if i == retries - 1:
-                return f"Failed after multiple keys/retries: {str(e)}"
             time.sleep(1)
+            continue
 
-    return "Failed to get response after rotating all keys and maximum retries."
+    return "Failed to get response after trying to exhaust keys."
 
 if __name__ == "__main__":
-    mock_chunks = [{"text": "Speech on July 3rd about defense budget.", "file_name": "uk_2023-07-03.txt"}]
-    test_query = "What was the speech about?"
-    print("--- Running Dual-Key Rotation Test ---")
-    print(generate_answer(test_query, mock_chunks))
+    # בדיקה ידנית
+    mock_chunks = [{"text": "Speech on July 3rd about defense budget.", "file_name": "uk_2023.txt"}]
+    print("--- Running Combined Logic & Prompt Test ---")
+    print(generate_answer("What was the speech about?", mock_chunks))
