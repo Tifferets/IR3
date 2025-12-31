@@ -10,7 +10,7 @@ K_VALUES = [3, 5, 10]  # k1, k2, k3
 CHUNKING_TYPES = ["fixed_660", "hierarchical"]
 METHODS = ["bm25", "dense"]
 
-OUTPUT_CSV = "experiment_results.csv"
+OUTPUT_CSV = "experiment_results_new_conceptual.csv"
 
 
 def _adapt_chunks_for_generator(retrieved_chunks):
@@ -97,17 +97,32 @@ def run_full_experiment_suite(queries, output_csv=OUTPUT_CSV):
 
 if __name__ == "__main__":
     queries = [
-        # Factual (4)
-        "On what dates did the British Prime Minister deliver his speech on the defense budget?",
-        "What was the main argument regarding the immigration bill that was presented?",
-        "What three industrial sectors were mentioned as the main victims of the new trade policy that was presented?",
-        "What organizations were mentioned by the speakers as supporting the proposed reform of the health system?",
+        # given questions:
+         # Factual (4)
+         "On what dates did the British Prime Minister deliver his speech on the defense budget?",
+         "What was the main argument regarding the immigration bill that was presented?",
+         "What three industrial sectors were mentioned as the main victims of the new trade policy that was presented?",
+         "What organizations were mentioned by the speakers as supporting the proposed reform of the health system?",
 
-        # Conceptual (4)
-        "How does the rhetoric on climate change vary between different speakers; is the emphasis on economic opportunity or existential crisis?",
-        "What is the central tension that emerges from the speeches between the need for national security and the protection of citizens’ privacy in the digital age?",
-        "How is the state’s moral responsibility towards refugees and asylum seekers described, and what are the ethical (rather than economic) arguments given for and against their absorption?",
-        "In what ways did speakers link investment in education to reducing future crime, and was there consensus on this issue?",
+         # Conceptual (4)
+         "How does the rhetoric on climate change vary between different speakers; is the emphasis on economic opportunity or existential crisis?",
+         "What is the central tension that emerges from the speeches between the need for national security and the protection of citizens’ privacy in the digital age?",
+         "How is the state’s moral responsibility towards refugees and asylum seekers described, and what are the ethical (rather than economic) arguments given for and against their absorption?",
+         "In what ways did speakers link investment in education to reducing future crime, and was there consensus on this issue?",
+        
+        # new questions:
+            # Factual (4)
+         "How many Chinese military aircraft were reported near Taiwan on May 15, 2024, according to the National Defense Ministry report?",
+         "Who is the anti-knife-crime campaigner mentioned in the Redditch constituency, and how is he educating young people in schools?",
+         "What percentage of D.C. residents are considered obese, and what are the two primary factors identified as the causes of this epidemic?",
+         "What is the name of the specific Senate bill discussed for combating the sexual exploitation of children?",
+
+            # Conceptual (4)
+         "What tension is described between Taiwan’s security risks and the promise of protecting its independence, and what role does President Lai play in this context?",
+         "How do the debates frame the responsibility of the tech industry in the context of protecting children, and is the emphasis on legal accountability or corporate transparency?",
+         "In what ways do the speakers use historical commemorations such as Black History Month or the Pearl Harbor anniversary to frame current national security or social justice priorities?",
+         "How is the Palestinian-Israeli conflict discussed through the perspective of the author Raja Shehadeh, and what ethical arguments are presented regarding Israel’s integration into the Middle East versus a Western orientation?"
+
     ]
 
     run_full_experiment_suite(queries)
